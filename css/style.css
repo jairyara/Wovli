@@ -1,0 +1,331 @@
+    :root {
+    --color-primary: #7F78D2;
+    --color-auxiliar: #52DE97;
+    --color-textLight: #FFF;
+    --color-textDark: #000;
+    --color-background: #F7F7F7;
+    --color-gray: #E5E7EA;
+    --font-principal: 'Raleway', sans-serif;
+    --fontSize-30: 30px;
+    --fontSize-20: 20px;
+    --fontSize-18: 18px;
+    --fontWeight-Bold: 700;
+    --fontWeight-Extrabold: 800;
+    --font-second: 'Century Gothic', sans-serif;
+    --maximum-width: 1000px;
+    --margin-interline: 80px auto 0;
+}
+
+
+
+/* --- General Styles --*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+/* --- Header --*/
+
+.header {
+    background: var(--color-primary);
+    color: var(--color-textLight);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+}
+
+nav div ul li {
+    display: inline;
+}
+
+nav div ul li a {
+    text-decoration: none;
+    color: var(--color-textLight);
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-18);
+    font-weight: var(--fontWeight-Extrabold);
+    padding: 0 10px;
+}
+
+/* --- Hero --- */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+    margin: var(--margin-interline);
+}
+
+img.img-up {
+    position: relative;
+    top: -100px;
+}
+
+.descriptionWrapper {
+    margin: 0 50px 0 0;
+
+}
+
+.description {
+    max-width: 350px;
+    min-width: 330px;
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-18);  
+    position: relative;
+    top: -30px;
+}
+
+.wovli-logo {
+    position: relative;
+    top: -30px;
+    text-align: center;
+    left: -20px;
+}
+
+.btn-cta {
+    background: var(--color-primary);
+    color: var(--color-textLight);
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-18);
+    font-weight: var(--fontWeight-Bold);
+}
+
+/* --- Portfolio services ---*/
+.portfolio-services {
+    background: var(--color-auxiliar);
+    color: var(--color-textLight);
+    margin: var(--margin-interline);
+    padding: 60px;
+}
+
+.title-sectionA {
+    color: var(--color-textLight);
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-30);
+    font-weight: var(--fontWeight-Extrabold);
+    max-width: var(--maximum-width);
+    text-align: center;
+    padding: 0 0 40px;
+    margin: 0 auto;
+}
+
+.portfolio-container {
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-portfolio{
+    max-width: 250px;
+    min-width: 250px;
+    height: auto;
+    background: var(--color-textLight);
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.img-card {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: var(--font-second);
+    font-size: var(--fontSize-20);
+    font-weight: var(--fontWeight-Bold);
+    color: var(--color-textDark);
+    text-align: center;
+    margin-bottom: 30px;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+.btn-portfolio {
+    background: var(--color-primary);
+    color: var(--color-textLight);
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-18);
+    font-weight: var(--fontWeight-Extrabold);  
+    border: none;
+    border-radius: 3px;
+    height: 40px;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+}
+
+/* --- Benefits --- */
+
+.benefits {
+    padding: 60px;
+}
+
+.subtitles {
+    font-family: var(--font-second);
+    font-size: var(--fontSize-20);
+    font-weight: var(--fontWeight-Bold);
+    color: var(--color-textDark);
+    text-align: center;
+    margin-bottom: 10px;
+    max-height: 100px;
+    min-height: 50px;
+}
+
+.benefits-container {
+    max-width: var(--maximum-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-items: space-between;
+}
+
+.description-benefits {
+    text-align: center;
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-18);
+
+}
+
+.title-sectionB {
+    color: var(--color-textDark);
+    font-family: var(--font-principal);
+    font-size: var(--fontSize-30);
+    font-weight: var(--fontWeight-Extrabold);
+    max-width: var(--maximum-width);
+    text-align: center;
+    padding: 0 0 40px;
+    margin: 0 auto;
+}
+
+.card-benefits{
+    max-width: 250px;
+    min-width: 250px;
+    max-height: 400px;
+    min-height: 350px;
+    background: var(--color-textLight);
+    padding: 25px;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+/* --- Contact --- */
+
+.form-contact {
+    width: 500px;
+    background: var(--color-grayLightMedium);
+    margin: 0 auto 40px;
+    border-radius: 5px;
+    padding: 30px;
+  }
+  
+  .form-contactWrapper {
+    width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  form div h2.section-title {
+    padding: 0 20px 20px;
+  }
+  
+  label {
+    font-family: var(--font-principal);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    padding: 15px 0;
+  }
+  
+  .input-container input {
+    font-family: var(--font-principal);
+    font-size: 12px;
+    text-align: left;
+    padding: 15px 0 5px;
+    margin-bottom: 15px;
+    min-width: 300px;
+    max-width: 440px;
+    width: 440px;
+    height: auto;
+    border: 0;
+    background: none;
+  }
+  
+  textarea {
+    font-family: var(--font-principal);
+    font-size: 12px;
+    text-align: left;
+    padding: 15px 0 5px;
+    min-width: 300px;
+    max-width: 440px;
+    width: 440px;
+    min-height: 50px;
+    max-height: 100px;
+    height: 100px;
+    color: var(--color-);
+    margin: 0 0 15px 0;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid var(--color-grayMedium);
+    vertical-align: text-bottom;
+  }
+  
+  .btn-form input {
+    max-width: 400px;
+    min-width: 350px;
+    width: auto;
+    height: 40px;
+    border-radius: 3px;
+    color: var(--color-textLight);
+    background: var(--color-primary);
+    border: 0;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+  }
+  
+  .btn-form input:hover {
+    transform: scale(1.05);
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+
+/* --- Footer --- */
+
+.footer {
+    background: var(--color-primary);
+}
+
+.footer-firstLine {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    display: inline;
+}
+
+
+
