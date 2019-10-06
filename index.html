@@ -1,36 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Wovli - Diseño y programación</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800&display=swap" rel="stylesheet">
+    <title>Wovli | Diseño y programación</title>
 </head>
+
 <body>
     <header class="header">
         <nav>
-            <div class="img-header">
+            <div class="header-container">
                 <figure class="logo-wovli">
-                    <img src="images/logo-purple.png" alt="">
+                    <img src="images/logo-white.png" alt="">
                 </figure>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
         </nav>
     </header>
     <article class="hero-content">
-        <figure class="hero-img">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </figure>
-        <figure class="wovli-logo">
-            <img src="images/logo-purple.png" alt="">
-        </figure>
+        <div class="hero-container">
+            <figure class="hero-img">
+                <img src="images/website.png" width="250" height="250" alt="">
+                <img src="images/creativity.png" height="100" width="100" alt="">
+                <img class="img-up" src="images/social-media.png" height="100" width="100" alt="">
+            </figure>
+            <div class="descriptionWrapper">
+                <figure class="wovli-logo">
+                    <img src="images/logo-purple.png" alt="">
+                </figure>
+                <div class="description">
+                    <p class="description-paragraph">Diseño de páginas web <br>
+                        Diseño y programación de apps <br>
+                        Gestión de Redes sociales <br>
+                        Diseño de contenido Social Media <br>
+                        Diseño de logos <br>
+                        Videos promocionales y más...
+                    </p>
+                </div>
+                <input type="submit" class="btn-cta" value="Solicitar información" onClick="">
+            </div>
+        </div>
     </article>
+    <article class="portfolio-services">
+        <h1 class="title-sectionA">
+            Portafolio de Servicios
+        </h1>
+        <div class="portfolio-container">
+            <div class="card-portfolio">
+                <figure class="img-card">
+                    <img src="images/computer.png" alt="" width="90" height="90" class="img-web">
+                </figure>
+                <h2 class="subtitle">
+                    Páginas web y apps
+                </h2>
+                <input type="submit" class="btn-portfolio" value="Solicitar" onClick="">
+            </div>
+            <div class="card-portfolio">
+                <figure class="img-card">
+                    <img src="images/creativity.png" alt="" width="90" height="90" class="img-design">
+                </figure>
+                <h2 class="subtitle">
+                    Diseño gráfico
+                </h2>
+                <input type="submit" class="btn-portfolio" value="Solicitar" onClick="">
+            </div>
+            <div class="card-portfolio">
+                <figure class="img-card">
+                    <img src="images/bullhorn.png" alt="" width="90" height="90" class="img-socialMedia">
+                </figure>
+                <h2 class="subtitle">
+                    Gestión Redes Sociales
+                </h2>
+                <input type="submit" class="btn-portfolio" value="Solicitar" onClick="">
+            </div>
+        </div>
+    </article>
+    <article class="benefits">
+        <h1 class="title-sectionB">
+            Descubre los beneficios
+        </h1>
+        <div class="benefits-container">
+            <div class="card-benefits">
+                <h2 class="subtitle">
+                    Páginas web y apps
+                </h2>
+                <figure class="img-card">
+                    <img src="images/responsive.png" alt="" width="90" height="90" class="img-web">
+                </figure>
+                <div class="description-portfolioWrapper">
+                    <p class="description-portfolio">
+                        Con una web y tu app puedes mostrar tus productos y servicios de forma fácil y a toda hora <br>
+                        Vende tus productos y servicios en cualquier momento
+                    </p>
+                </div>
+            </div>
+            <div class="card-benefits">
+                <h2 class="subtitle">
+                    Diseño gráfico
+                </h2>
+                <figure class="img-card">
+                    <img src="images/innovation.png" alt="" width="90" height="90" class="img-design">
+                </figure>
+                <div class="description-portfolioWrapper">
+                    <p class="description-portfolio">
+                        Diseña lo que quieras para mostrar lo que vendes con tu negocio <br>
+                        Diseña la identidad corporativa de tu negocio
+                    </p>
+                </div>
+            </div>
+            <div class="card-benefits">
+                <h2 class="subtitle">
+                    Gestión redes sociales
+                </h2>
+                <figure class="img-card">
+                    <img src="images/advertising.png" alt="" width="90" height="90" class="img-mkt">
+                </figure>
+                <div class="description-portfolioWrapper">
+                    <p class="description-portfolio">
+                        Enfócate en tu negocio mientras uno de nuestros expertos gestione las redes sociales de su
+                        negocio o marca personal
+                    </p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <section class="form-contact">
+        <form action="submit" method="GET">
+            <div class="form-wrapper">
+                <h2 class="section-title">
+                    Contacto
+                </h2>
+                <div class="label-container">
+                    <label for="name">Nombre</label>
+                </div>
+                <div class="input-container">
+                    <input type="text" id="name" placeholder="Tu Nombre" required>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <div class="label-container">
+                    <label for="mail">Correo</label>
+                </div>
+                <div class="input-container">
+                    <input type="email" id="mail" placeholder="Tu Correo" required>
+                </div>
+            </div>
+            <div class="form-wrapper">
+                <div class="label-container">
+                    <label for="message">Tú mensaje</label>
+                </div>
+                <div class="input-container">
+                    <textarea cols="57" rows="8" id="message" placeholder="Mensaje" required></textarea>
+                </div>
+            </div>
+            <div class="btn-form">
+                <input type="submit" value="Enviar mensaje" onClick="location.href='';">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <nav>
+                <figure class="logo-wovli">
+                    <img src="images/logo-white.png" alt="">
+                </figure>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="footer-secondLine">
+                <div class="social-media">
+                    <a href=""><img src="images/tw.png" height="24" width="24" alt=""></a>
+                    <a href=""><img src="images/fb.png" height="24" width="24" alt=""></a>
+                    <a href=""><img src="images/ig.png" height="24" width="24" alt=""></a>
+                </div>
+                <div class="mail">
+                    <a href="">hola@wovli.com</a>
+                </div>
+            </div>
+            <div class="footer-brand">
+                <p>Wovli © 2019</p>
+                <p>Hecho con ❤ por Wovli</p>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>
