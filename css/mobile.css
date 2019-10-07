@@ -1,0 +1,133 @@
+
+	@media (max-width: 767px) {
+		header {
+			background: --color-primary;
+			width: auto;
+		}
+
+		nav ul li a {
+			display: none;
+		}
+
+		nav div.menu a {
+			display: flex;
+			color: var(--color-textLight);
+		}
+		
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: auto;
+		}
+		
+		.description-paragraph {
+			font-size: var(--fontSize-16);
+			max-width: 300px;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.wovli-logo {
+			top: 0;
+			left: 0;
+		}
+
+		.img-up, .img-down, .img-hero {
+			display: none;
+		}
+
+		.portfolio-container {
+			margin: 0 auto;
+			display: block;
+		}
+		
+		.benefits-container {
+			display: block;
+		}
+
+		.btn-cta {
+			width: 200px;
+			margin: 0 auto;
+		}
+
+		.btn-form input {
+			min-width: 200px;
+			max-width: 200px;
+			margin: 0 auto;
+		}
+
+		.btn {
+			margin: 0 auto;
+		}
+
+		.form-contact {
+			width: 300px;
+		}
+
+		  .input-container input {
+        font-family: var(--font-principal);
+        font-size: 12px;
+        text-align: left;
+        padding: 15px 0 5px;
+        margin-bottom: 15px;
+        min-width: 250px;
+        max-width: 300px;
+        height: auto;
+        border: 0;
+        border-bottom: 1px solid var(--color-gray);
+        background: none;
+    }
+
+  textarea {
+        font-family: var(--font-principal);
+        font-size: 12px;
+        text-align: left;
+        padding: 15px 0 5px;
+        min-width: 250px;
+        max-width: 300px;
+        width: 300px;
+        min-height: 50px;
+        max-height: 100px;
+        height: 100px;
+        color: var(--color-textDark);
+        margin: 0 0 15px 0;
+        border: 0;
+        background: none;
+        border-bottom: 1px solid var(--color-gray);
+        vertical-align: text-bottom;
+    }
+
+    .footer-firstLine {
+    	display: none;
+    }
+
+    .label-container {
+    	max-width: 300px;
+    }
+
+    .form-contact, .portfolio-services, .benefits, .card-benefits {
+    	padding: 10px;
+    	margin: 0 auto;
+    }
+
+     .descriptionWrapper {
+    	margin: 0 auto;
+    }
+
+    .description {
+    	width: 300px;
+    	min-width: 250px;
+    	max-width: 300px;
+    	margin: 0 auto;
+    }
+
+    .hero-content {
+    	margin: 0 auto;
+    }
+
+    .hero-container {
+    	margin: 0 auto;
+    }
+
+	} 
