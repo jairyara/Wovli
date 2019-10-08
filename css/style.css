@@ -35,7 +35,7 @@
     .header {
         background: var(--color-primary);
         color: var(--color-textLight);
-        height: 80px;
+        height: auto;
     }
 
     .header-container {
@@ -46,13 +46,45 @@
         margin: 0 auto;
     }
 
-    .menu a {
+    .burguer {
+        display: none;   
+    }
+
+    .burguer div {
+        width: 25px;
+        height: 3px;
+        background: var(--color-textLight);
+        margin: 5px;
+        transition: transform 0.5s ease-out;
+    }
+
+    a.menu-mb {
         color: var(--color-textLight);
         text-decoration: none;
         font-size: var(--fontSize-18);
         font-weight: var(--fontWeight-Extrabold);
         font-family: var(--font-principal);
         display: none;
+    }
+    
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        display: inline;
+        list-style: none;
+    }
+
+
+   .nav-links a {
+        text-decoration: none;
+        color: var(--color-textLight);
+        font-family: var(--font-principal);
+        font-size: var(--fontSize-18);
+        font-weight: var(--fontWeight-Extrabold);
+        padding: 0 10px;
     }
 
     nav div ul li {
@@ -68,13 +100,17 @@
         padding: 0 10px;
     }
 
+    
+
+ 
+
     /* --- Hero --- */
 
     .hero-container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        
+        justify-content: space-around;
+        max-width: var(--maximumWidth);
         margin: 0 auto;
         margin: var(--margin-interline);
     }
@@ -88,13 +124,11 @@
         top: -100px;
     }
 
-    .descriptionWrapper {
-        margin: 0 50px 0 0;
-    }
+    
 
     .description {
-        max-width: 350px;
-        min-width: 330px;
+        max-width: 300px;
+        min-width: 250px;
         font-family: var(--font-principal);
         font-size: var(--fontSize-18);
         position: relative;
@@ -137,14 +171,14 @@
         font-family: var(--font-principal);
         font-size: var(--fontSize-30);
         font-weight: var(--fontWeight-Extrabold);
-        
+        max-width: var(--maximumWidth);
         text-align: center;
         padding: 0 0 40px;
         margin: 0 auto;
     }
 
     .portfolio-container {
-        
+        max-width: var(--maximumWidth);
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -212,7 +246,7 @@
     }
 
     .benefits-container {
-        
+        max-width: var(--maximumWidth);
         margin: 0 auto;
         display: flex;
         align-items: center;
@@ -230,7 +264,7 @@
         font-family: var(--font-principal);
         font-size: var(--fontSize-30);
         font-weight: var(--fontWeight-Extrabold);
-        
+        max-width: var(--maximumWidth);
         text-align: center;
         padding: 0 0 40px;
         margin: 0 auto;
@@ -341,7 +375,7 @@
     }
 
     .footer-container {
-        
+        max-width: var(--maximumWidth);
         margin: 0 auto;
     }
 
@@ -388,3 +422,6 @@
         transition: .2s ease-in;
         cursor: pointer;
     }
+
+
+    
