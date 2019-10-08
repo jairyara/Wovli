@@ -1,0 +1,164 @@
+   :root {
+        --color-primary: #7F78D2;
+        --color-auxiliar: #52DE97;
+        --color-textLight: #FFF;
+        --color-textDark: #000;
+        --color-background: #F7F7F7;
+        --color-grayAccent: #d4d7dd;
+        --color-gray: #E5E7EA;
+        --font-principal: 'Raleway', sans-serif;
+        --fontSize-30: 30px;
+        --fontSize-20: 20px;
+        --fontSize-18: 18px;
+        --fontSize-16: 16px;
+        --fontWeight-Bold: 700;
+        --fontWeight-Extrabold: 800;
+        --font-second: 'Century Gothic', sans-serif;
+        --maximumWidth: 1000px;
+        --margin-interline: 80px auto 0;
+    }
+
+    /* --- General Styles --*/
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: var(--color-background);
+    }
+
+
+.burguer {
+        display: none;   
+    }
+
+    .burguer div {
+        width: 25px;
+        height: 3px;
+        background: var(--color-textLight);
+        margin: 5px;
+        transition: transform 0.5s ease-out;
+    }
+
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav-links li {
+        display: inline;
+        list-style: none;
+    }
+
+
+   .nav-links a, .wovli-logo a {
+        text-decoration: none;
+        color: var(--color-textLight);
+        font-family: var(--font-principal);
+        font-size: var(--fontSize-18);
+        font-weight: var(--fontWeight-Extrabold);
+        padding: 0 10px;
+    }
+
+
+    .header {
+        background: var(--color-primary);
+        color: var(--color-textLight);
+        height: 8vh;
+
+    }
+
+	 nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    }
+
+
+
+@media screen and (max-width: 768px) {
+		
+			body {
+				overflow-x: hidden;
+			}
+
+		.header {
+			height: 13vh;
+		}
+		
+		.header-container {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 20px;
+		}
+
+		.burguer {
+			display: block;
+			cursor: pointer;
+		}
+
+	
+		.nav-links{
+			position: absolute;
+			right: 0px;
+			height: 87vh;
+			top: 13vh;
+			background-color: var(--color-primary);
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 50%;	
+			transform: translateX(100%); 
+			transition: transform 0.5s ease-in;
+
+		}
+
+		.nav-links li {
+			opacity: 0;
+		}
+ 
+}
+
+@media screen and (max-width: 1024px) {
+
+} 
+
+
+.nav-active {
+        transform: translateX(0%);
+    }
+
+    @keyframes navLinkFade {
+        from {
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+
+.toggle .line1 {
+	transform: rotate(-45deg) translate(-5px, 6px);
+	transition: transform 0.5s ease-in;
+}
+
+.toggle .line2 {
+	opacity: 0;
+}
+
+.toggle .line3 {
+	transform: rotate(45deg) translate(-5px, -6px) ;
+	transition: transform 0.5s ease-in;
+}
+
+
+
+
