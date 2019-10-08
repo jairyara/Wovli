@@ -1,36 +1,36 @@
 
 	@media (max-width: 767px) {
-		header {
-			background: --color-primary;
-			width: auto;
+		
+		.header {
+			height: auto;
 		}
 
-		nav ul li a {
+		nav ul {
 			display: none;
 		}
+		
+.header-container {
+	display: flex;
+	
+}
 
-		nav div.menu a {
+		.menu {
 			display: flex;
-			color: var(--color-textLight);
+
 		}
-		
-		.header-container {
-			display: flex;
-			align-items: center;
-			justify-content: space-around;
-			width: auto;
-		}
-		
+
 		.description-paragraph {
 			font-size: var(--fontSize-16);
 			max-width: 300px;
 			text-align: center;
 			margin: 0 auto;
+			margin-top: 40px;
 		}
 
 		.wovli-logo {
 			top: 0;
 			left: 0;
+			margin-bottom: 30px;
 		}
 
 		.img-up, .img-down, .img-hero {
@@ -57,8 +57,11 @@
 			margin: 0 auto;
 		}
 
-		.btn {
+		.descriptionWrapper input.btn {
 			margin: 0 auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;	
 		}
 
 		.form-contact {
@@ -106,9 +109,15 @@
     	max-width: 300px;
     }
 
-    .form-contact, .portfolio-services, .benefits, .card-benefits {
-    	padding: 10px;
+     .portfolio-services, .benefits {
+    	padding: 30px;
     	margin: 0 auto;
+    }
+
+    .card-benefits, .card-portfolio, .form-contact {
+       	padding: 20px;
+    	margin: 0 auto;
+    	margin-bottom: 30px;
     }
 
      .descriptionWrapper {
@@ -119,15 +128,28 @@
     	width: 300px;
     	min-width: 250px;
     	max-width: 300px;
-    	margin: 0 auto;
+    	
     }
 
     .hero-content {
-    	margin: 0 auto;
+    	margin-bottom: 30px;
     }
 
     .hero-container {
     	margin: 0 auto;
     }
 
-	} 
+}
+
+
+@media (max-width: 1024px) {
+
+} 
+
+
+
+@media (max-width: 1366px) {
+
+}
+
+@media (max-width: 1920px)
