@@ -11,6 +11,7 @@
         --fontSize-20: 20px;
         --fontSize-18: 18px;
         --fontSize-16: 16px;
+        --fontSize-14: 14px;
         --fontWeight-Bold: 700;
         --fontWeight-Extrabold: 800;
         --font-second: 'Century Gothic', sans-serif;
@@ -18,7 +19,7 @@
         --margin-interline: 80px auto 0;
     }
 
-    /* --- General Styles --*/
+    /*  General Styles */
 
     * {
         margin: 0;
@@ -30,7 +31,7 @@
         background-color: var(--color-background);
     }
 
-    /* --- Header --*/
+    /*  Header */
 
     .header {
         background: var(--color-primary);
@@ -46,18 +47,6 @@
         margin: 0 auto;
     }
 
-    .burguer {
-        display: none;   
-    }
-
-    .burguer div {
-        width: 25px;
-        height: 3px;
-        background: var(--color-textLight);
-        margin: 5px;
-        transition: transform 0.5s ease-out;
-    }
-
     a.menu-mb {
         color: var(--color-textLight);
         text-decoration: none;
@@ -66,7 +55,7 @@
         font-family: var(--font-principal);
         display: none;
     }
-    
+
     .nav-links {
         display: flex;
         justify-content: space-between;
@@ -77,8 +66,7 @@
         list-style: none;
     }
 
-
-   .nav-links a {
+    .nav-links a {
         text-decoration: none;
         color: var(--color-textLight);
         font-family: var(--font-principal);
@@ -100,11 +88,9 @@
         padding: 0 10px;
     }
 
-    
+    /* End header */
 
- 
-
-    /* --- Hero --- */
+    /* Hero */
 
     .hero-container {
         display: flex;
@@ -115,7 +101,7 @@
         margin: var(--margin-interline);
     }
 
- img {
+    img {
         vertical-align: bottom;
     }
 
@@ -123,8 +109,6 @@
         position: relative;
         top: -100px;
     }
-
-    
 
     .description {
         max-width: 300px;
@@ -156,6 +140,8 @@
         -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
         box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
     }
+
+    /* End hero styles */
 
     /* --- Portfolio services ---*/
 
@@ -405,6 +391,13 @@
         border: red;
     }
 
+    .heart:hover {
+        transform: scale(2);
+        transition: .2s ease-in-out;
+        cursor: progress;
+
+    }
+
     .mail a {
         color: var(--color-textLight);
         text-decoration: none;
@@ -422,6 +415,3 @@
         transition: .2s ease-in;
         cursor: pointer;
     }
-
-
-    

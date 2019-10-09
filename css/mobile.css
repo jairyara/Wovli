@@ -1,160 +1,123 @@
-
-	@media screen and (max-width: 768px) {
-		
-			body {
-				overflow-x: hidden;
-			}
-
-		.header {
-			height: 8vh;
-		}
-		
-		.header-container {
-			display: flex;
-			align-items: center;
-			justify-content: space-between;
-			padding: 0 20px;
-		}
-
-		.nav-links {
-			display: none;
-		}
-
-		.description-paragraph {
-			font-size: var(--fontSize-16);
-			max-width: 300px;
-			text-align: center;
-			margin: 0 auto;
-			margin-top: 40px;
-		}
-
-		.wovli-logo {
-			top: 0;
-			left: 0;
-			margin-bottom: 30px;
-		}
-
-		.img-up, .img-down, .img-hero {
-			display: none;
-		}
-
-		.portfolio-container {
-			margin: 0 auto;
-			display: block;
-		}
-		
-		.benefits-container {
-			display: block;
-		}
-
-		.btn-cta {
-			width: 200px;
-			margin: 0 auto;
-		}
-
-		.btn-form input {
-			min-width: 200px;
-			max-width: 200px;
-			margin: 0 auto;
-		}
-
-		.descriptionWrapper input.btn {
-			margin: 0 auto;
-			display: flex;
-			justify-content: center;
-			align-items: center;	
-		}
-
-		.form-contact {
-			width: 300px;
-		}
-
-		  .input-container input {
-        font-family: var(--font-principal);
-        font-size: 12px;
-        text-align: left;
-        padding: 15px 0 5px;
-        margin-bottom: 15px;
-        min-width: 200px;
-        max-width: 250px;
-        height: auto;
-        border: 0;
-        border-bottom: 1px solid var(--color-gray);
-        background: none;
-    }
-
-  textarea {
-        font-family: var(--font-principal);
-        font-size: 12px;
-        text-align: left;
-        padding: 15px 0 5px;
-        min-width: 200px;
-        max-width: 250px;
-        width: 300px;
-        min-height: 50px;
-        max-height: 100px;
-        height: 100px;
-        color: var(--color-textDark);
-        margin: 0 0 15px 0;
-        border: 0;
-        background: none;
-        border-bottom: 1px solid var(--color-gray);
-        vertical-align: text-bottom;
-    }
-
-    .footer-firstLine {
-    	display: none;
-    }
-
-    .label-container {
-    	max-width: 250px;
-    }
-
-     .portfolio-services, .benefits {
-    	padding: 30px;
-    	margin: 0 auto;
-    }
-
-    .card-benefits, .card-portfolio, .form-contact {
-       	padding: 20px;
-    	margin: 0 auto;
-    	margin-bottom: 30px;
-    }
-
-     .descriptionWrapper {
-    	margin: 0 auto;
-    }
-
-    .description {
-    	width: 300px;
-    	min-width: 250px;
-    	max-width: 300px;
-    	
-    }
-
-    .hero-content {
-    	margin-bottom: 30px;
-    }
-
-    .hero-container {
-    	margin: 0 auto;
-    }
-
+@media screen and (max-width: 768px) {
+	/* Header */
+	.header {
+		height: auto;
+	}
+	.header-container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 20px;
+	}
+	.menu-w {
+		display: none;
+	}
+	a.services-direct, a.contact-direct {
+		font-size: var(--fontSize-14);
+	}
+	.btn-cta {
+		width: 200px;
+		margin: 0 auto;
+	}
+	/* Hero */
+	.description-paragraph {
+		font-size: var(--fontSize-16);
+		max-width: 300px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 40px;
+	}
+	.descriptionWrapper input.btn {
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.descriptionWrapper {
+		margin: 0 auto;
+	}
+	.description {
+		width: 300px;
+		min-width: 250px;
+		max-width: 300px;
+	}
+	.hero-content {
+		margin-bottom: 30px;
+	}
+	.hero-container {
+		margin: 0 auto;
+	}
+	.wovli-logo {
+		top: 0;
+		left: 0;
+		margin-bottom: 30px;
+	}
+	.img-up, .img-down, .img-hero {
+		display: none;
+	}
+	/* Portfolio and benefits */
+	.portfolio-container {
+		margin: 0 auto;
+		display: block;
+	}
+	.portfolio-services, .benefits {
+		padding: 30px;
+		margin: 0 auto;
+	}
+	.card-benefits, .card-portfolio, .form-contact {
+		padding: 20px;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.benefits-container {
+		display: block;
+	}
+	/* Contact */
+	.btn-form input {
+		min-width: 200px;
+		max-width: 200px;
+		margin: 0 auto;
+	}
+	.form-contact {
+		width: 300px;
+	}
+	.input-container input {
+		font-family: var(--font-principal);
+		font-size: 12px;
+		text-align: left;
+		padding: 15px 0 5px;
+		margin-bottom: 15px;
+		min-width: 200px;
+		max-width: 250px;
+		height: auto;
+		border: 0;
+		border-bottom: 1px solid var(--color-gray);
+		background: none;
+	}
+	textarea {
+		font-family: var(--font-principal);
+		font-size: 12px;
+		text-align: left;
+		padding: 15px 0 5px;
+		min-width: 200px;
+		max-width: 250px;
+		width: 300px;
+		min-height: 50px;
+		max-height: 100px;
+		height: 100px;
+		color: var(--color-textDark);
+		margin: 0 0 15px 0;
+		border: 0;
+		background: none;
+		border-bottom: 1px solid var(--color-gray);
+		vertical-align: text-bottom;
+	}
+	.label-container {
+		max-width: 250px;
+	}
+	/* Footer */
+	.footer-firstLine {
+		display: none;
+	}
 }
 
-@media screen and (max-width: 1024px) {
-
-} 
-
-
-.nav-active {
-        transform: translateX(0%);
-    }
-
-
-
-
-
-
-
-   
